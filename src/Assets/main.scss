@@ -1,0 +1,93 @@
+// Fonst Start
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../Assets/Fonts/mulish-v11-latin-regular.woff2') format('woff2'),
+    url('../Assets/Fonts/mulish-v11-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../Assets/Fonts/fraunces-v22-latin-regular.woff2') format('woff2'),
+    url('../Assets/Fonts/fraunces-v22-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../Assets/Fonts/fraunces-v22-latin-600.woff2') format('woff2'),
+         url('../Assets/Fonts/fraunces-v22-latin-600.woff') format('woff');
+  }
+// Fonst End
+
+
+// General Codes Start
+
+*{
+    transition: all 0.4s;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: "Fraunces" , sans-serif;
+    font-family: "Mulish" , sans-serif;
+    font-weight: 400;
+}
+img{
+    object-fit: cover;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1320px;
+}
+.subcontainer{
+    width: 500px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+// General Codes End
+
+
+// Header's some codes Start
+.site-header{
+    padding: 50px 0;
+}
+// Header's some codes End
+
+// Site footer Start
+.site-footer{
+    padding: 92px 0 20px 0;
+    background-image: url("./Images/footer__img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+// Site footer End
+
+
+
+@media only screen and (max-width:900px){
+    .site-header{
+        padding: 35px 0;
+    }
+}

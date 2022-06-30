@@ -1,0 +1,206 @@
+
+
+.advert__img-wrapper{
+    text-align: center;
+}
+
+.footer__texts-wrapper{
+    // width: 107%;
+    margin-top: 10px;
+    padding-bottom: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #D092BA;
+}
+.footer__text{
+    position: relative;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.4px;
+    color: #242F65;
+}
+.footer__text:nth-child(2n+1)::before{
+    content: '';
+    position: absolute;
+    background-image: url("../../Assets/Images/hi.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 35px;
+    height: 53px;
+    top: 0;
+    bottom: 0;
+    left: -45px;
+    margin: auto 0;
+}
+.footer__text:nth-child(2n)::before{
+    content: '';
+    position: absolute;
+    background-image: url("../../Assets/Images/dasktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    bottom: 0;
+    left: -62px;
+    margin: auto 0;
+}
+.footer-last{
+    padding: 128px 0 48px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-list-inner{
+    display: flex;
+}
+.F-list:nth-child(2){
+    margin-left: 79px;
+}
+.F-item{
+    margin-bottom: 15px;
+}
+.F-item:nth-child(3){
+    margin-bottom: 0;
+}
+.F-link{
+    font-family: 'Fraunces', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0.4px;
+    color: #242F65;
+}
+.footer-text{
+    padding: 32px 40px 32px 30px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.4px;
+    color: #242F65;
+}
+.writer-footer{
+    position: relative;
+    padding: 10px 21px 12px 57px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    background: #242F65;
+    border: 1px solid #242F65;
+    border-radius: 10px;
+}
+.writer-footer::after{
+    position: absolute;
+    left: 21px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    content:'';
+    background-image: url("../../Assets/Images/menu-img.svg");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    width: 26px;
+    height: 26px;
+}
+.line{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #D092BA;
+}
+.footer-links{
+    padding-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links-footer{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #242F65;
+}
+.F-link:hover{
+    color: #FF774C;
+}
+
+@media only screen and (max-width:1237px){
+    .footer-last{
+        padding: 40px 10px 35px 10px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:1212px){
+    .footer__texts-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .footer__text + .footer__text {
+        margin-left: 70px;
+    }
+    .site-footer{
+        background-position: center top;
+        background-size:100%;
+        background:none;
+    }
+    .advert__img{
+        width: 200px;
+        height: 200px;
+    }
+    .footer-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:460px){
+    .footer__texts-wrapper{
+        margin: 0 auto;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .footer__text{
+        font-size: 20px;
+    }
+    .footer__tex::before{
+        width: 20px;
+        height: 10px;
+    }
+    .footer__text + .footer__text{
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width:500px){
+    .footer-list-inner{
+        flex-direction: column;
+    }
+    .F-list + .F-list {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width:400px){
+    .F-link{
+        font-size: 18px;
+    }
+    .footer-text , .writer-footer{
+        font-size: 20px;
+    }
+    .writer-footer{
+        font-size: 15px;
+    }
+    .links-footer{
+        font-size: 15px;
+    }
+}
